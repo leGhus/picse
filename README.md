@@ -14,6 +14,7 @@ To build and run this app locally you will need a few things:
 ```
 git clone https://github.com/leGhus/picse
 ```
+- setup `dev.env` based on exemple.env
 - Install dependencies
 ```
 cd picse
@@ -24,3 +25,23 @@ yarn
 yarn dev
 ```
 - complete the list of authorized keys in `src/keys.ts`
+
+# Production
+- setup `prod.env` based on exemple.env
+- add a log folder
+```
+cd picse
+mkdir logs
+```  
+- install dependencies
+```
+yarn
+```
+- build
+```
+yarn build
+```
+- launch server
+```
+yarn serve
+```
