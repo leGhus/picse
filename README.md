@@ -23,7 +23,3 @@ yarn
 ```
 yarn dev
 ```
-
-# Deploying the app
-There are many ways to deploy a Node app, and in general, nothing about the deployment process changes because you're using TypeScript.
-In this section, I'll walk you through how to deploy this app to Azure App Service using the extensions available in VS Code because I think it is the easiest and fastest way to get started, as well as the most friendly workflow from a developer's perspective.
