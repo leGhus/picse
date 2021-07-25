@@ -1,6 +1,5 @@
 import express, { NextFunction } from 'express';
 import { CustomError, WS_ERRORS } from './errors';
-import logger from '../../services/logger';
 
 export function errorHandler(
   error: CustomError,
@@ -8,7 +7,7 @@ export function errorHandler(
   res: express.Response,
   next?: NextFunction
 ): void {
-  logger.error(error)
+  console.error(error)
   if (res.headersSent) {
     return next(error);
   } else {

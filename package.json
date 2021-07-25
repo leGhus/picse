@@ -11,8 +11,7 @@
     "scripts": {
         "lint": "tsc && eslint \"**/*.{js,ts}\" --fix",
         "build": "tsc",
-        "serve": "cross-env NODE_ENV=prod node build/app.js",
-        "dev": "cross-env NODE_ENV=dev nodemon src/app.ts"
+        "dev": "nodemon src/picse.ts"
     },
     "dependencies": {
         "compression": "^1.7.4",

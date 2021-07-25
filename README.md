@@ -28,11 +28,10 @@ yarn dev
 - complete the list of authorized keys in `src/keys.ts`
 
 # Production
-- setup `prod.env` based on exemple.env
-- add a log folder
+- add required folders
 ```
 cd picse
-mkdir logs
+mkdir public/images
 ```  
 - install dependencies
 ```
@@ -42,7 +41,9 @@ yarn
 ```
 yarn build
 ```
-- launch server
+- launch server eiser using node or pm2
 ```
-yarn serve
+node buid/picse.js
+or
+pm2 start build/picse.js -o <info log file> -e <error log file> --time --merge-logs --watch
 ```
