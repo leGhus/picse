@@ -23,3 +23,4 @@ yarn
 ```
 yarn dev
 ```
+- complete the list of authorized keys in `src/keys.ts`

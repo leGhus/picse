@@ -7,6 +7,7 @@ import fs from 'fs';
 import { deleteFile, getAllFiles } from '../services/fileService';
 import { BadRequestError } from '../middlewares/error/errors';
 import { errorHandler } from '../middlewares/error/errorHandler';
+import isAuthorized from '../middlewares/authorization/auth';
 
 const storage = multer.diskStorage({
   destination: function(
@@ -47,6 +48,8 @@ const upload = multer({
 }).single('file');
 
 const fileController = Router();
+
+fileController.use(isAuthorized)
 
 fileController.get('/all', (req: Request, res: Response, next: NextFunction) => {
   try {
