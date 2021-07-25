@@ -10,6 +10,7 @@ To build and run this app locally you will need a few things:
 
 
 # Getting started
+- add a `public/images` folder
 - Clone the repository
 ```
 git clone https://github.com/leGhus/picse
